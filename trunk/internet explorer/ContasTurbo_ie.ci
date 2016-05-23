@@ -1,0 +1,638 @@
+﻿<project version = 9 civer = 7.1.7 winver = "2.9/6.1.7601" >
+   <autorun >1</>
+   <autoclose >0</>
+   <compname >Contas Turbo</>
+   <produrl >http://www.contasturbo.com</>
+   <ver >1.0</>
+   <supurl >http://www.contasturbo.com</>
+   <updurl ></>
+   <dlgfont >verdana</>
+   <headlogo >default - 1</>
+   <dlgfontsize >s8</>
+   <output >W:\Sites\contasturbo.com\addons\internet explorer</>
+   <exename >ContasTurbo_IE.exe</>
+   <beffile ></>
+   <aftfile ></>
+   <uninclude >0</>
+   <lang >portuguese_br</>
+   <addlang ></>
+   <selfextr >1</>
+   <instpath ></>
+   <voltype >nolimit</>
+   <volsize ></>
+   <volpattern >disk%i.pak</>
+   <password ></>
+   <progname >Plugin Contas Turbo</>
+   <appname >Plugin Contas Turbo para IE</>
+   <bl ></>
+   <blurl ></>
+   <unpath >inst</>
+   <unexe >uninstall.exe</>
+   <unlog >uninstall.ini</>
+   <installroot sorttype = 0 >
+      <children >
+         <install id = install expanded = 2 >
+            <children >
+               <_ id = background disabled = 1 >
+                  <desc ></>
+                  <head >#lcaption#</>
+                  <foot ></>
+                  <font >Times</>
+                  <height >36</>
+                  <bold >0</>
+                  <italic >0</>
+                  <backcol >0x0000FF</>
+                  <textcol >0xFFFFFF</>
+                  <shadecol >0x888888</>
+                  <uniform >0</>
+                  <backbmp ></>
+                  <stretchback >0</>
+               </>
+               <_ id = checkreq expanded = 0 disabled = 1 >
+                  <children >
+                     <_ id = empty ></>
+                  </>
+                  <desc ></>
+                  <checktype >admin</>
+                  <resvar >ischeck</>
+                  <not >0</>
+                  <msg ></>
+                  <if ></>
+               </>
+               <_ id = dlglang disabled = 1 >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgwel disabled = 0 >
+                  <desc >Contas Turbo</>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head >Plugin Contas Turbo para Internet Explorer</>
+                  <headtext >LEIA ATENTAMENTE! NÃO É O MESMO BLA BLA BLA DE SEMPRE.</>
+                  <dlgtext >Esse plugin NÃO É AUTOMÁTICO. Ou seja, você precisará clicar no botão do plugin para ativa-lo quando desejar.
+
+Se o botão do plugin não ficar visível no seu Internet Explorer após a instalação, vá na personalização de barra de ferramentas para tornar o botão visível. É necessário tornar visível a "barra de comandos".
+
+
+Em caso de dúvidas, entre em contato conosco pelo nosso site.
+
+
+http://www.contasturbo.com</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Plugin Contas Turbo para IE</>
+                  <root >curuser</>
+                  <subkey >Software\Microsoft\Internet Explorer\MenuExt\Contas Turbo para IE</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >http://api.contasturbo.com/plugin/ie.php</>
+                        </>
+                     </>
+                  </>
+                  <wow64 >0</>
+                  <if ></>
+               </>
+               <_ id = dlglic disabled = 1 >
+                  <desc ></>
+                  <file ></>
+                  <print >1</>
+                  <iagree >radio</>
+                  <buttons >pnc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >Liccolor</>
+                           <value >1</>
+                        </>
+                     </>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgfin disabled = 0 >
+                  <desc ></>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <chlist >
+                     <rows ></>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head >Contas Turbo</>
+                  <headtext >O plugin foi instalado com sucesso!</>
+                  <dlgtext >A instalação do plugin foi finalizada com sucesso, agradecemos seu interesse pelo programa e esperamos cumprir com as expectativas.
+
+Caso tenha dificuldades em fazer o botão do plugin aparecer na barra do seu Internet Explorer, entre em contato conosco.
+
+http://www.contasturbo.com</>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc ></>
+                  <root >locmach</>
+                  <subkey >Software\Microsoft\Internet Explorer\Extensions\{033DCACE-D09C-4E81-ACA8-64DE8CBF316F}</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >ButtonText</>
+                           <regtype >str</>
+                           <value >Plugin Contas Turbo</>
+                        </>
+                        <_ >
+                           <valname >CLSID</>
+                           <regtype >str</>
+                           <value >{0358E8FE-7ABD-41FE-B763-3F898227F061}</>
+                        </>
+                        <_ >
+                           <valname >Default Visible</>
+                           <regtype >str</>
+                           <value >Yes</>
+                        </>
+                        <_ >
+                           <valname >HotIcon</>
+                           <regtype >str</>
+                           <value >C:\\Windows\\contasturbo.ico</>
+                        </>
+                        <_ >
+                           <valname >Icon</>
+                           <regtype >str</>
+                           <value >C:\\Windows\\contasturbo.ico</>
+                        </>
+                        <_ >
+                           <valname >MenuText</>
+                           <regtype >str</>
+                           <value >Plugin Contas Turbo</>
+                        </>
+                        <_ >
+                           <valname >Script</>
+                           <regtype >str</>
+                           <value >http://api.contasturbo.com/plugin/ie.php</>
+                        </>
+                     </>
+                  </>
+                  <wow64 >0</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc ></>
+                  <comptype >store</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >win</>
+                  <custpath ></>
+                  <ifexist >overnewer</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >W:\Sites\contasturbo.com\addons\internet explorer\ContasTurbo.ico</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = dlgready disabled = 1 >
+                  <desc ></>
+                  <readytext >#lpathdest#:
+   #setuppath#</>
+                  <head ></>
+                  <headtext ></>
+                  <headlogo ></>
+                  <buttons >auto</>
+                  <if ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+            </>
+            <icofile >W:\Sites\contasturbo.com\addons\internet explorer\icon.ico</>
+            <resfile ></>
+            <leftimg >install - 1</>
+            <caption ></>
+            <verinfo >0</>
+            <noadmin >0</>
+            <selfdelete >0</>
+         </>
+      </>
+   </>
+   <uninstallroot sorttype = 0 >
+      <children >
+         <uninstall id = uninstall expanded = 2 >
+            <children >
+               <_ id = dlguconf >
+                  <desc ></>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext >texto</>
+                  <if ></>
+               </>
+               <_ id = dlguprog expanded = 0 >
+                  <children >
+                     <_ id = unprocess >
+                        <desc ></>
+                     </>
+                  </>
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <auto >1</>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = iniset >
+                  <desc ></>
+                  <path >inst</>
+                  <ifile ></>
+                  <section ></>
+                  <inilist >
+                     <rows ></>
+                  </>
+                  <utf >0</>
+               </>
+               <_ tag = 0 id = iniget >
+                  <desc ></>
+                  <path >inst</>
+                  <ifile ></>
+                  <section ></>
+                  <inilist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc ></>
+                  <root >curuser</>
+                  <subkey ></>
+                  <reglist >
+                     <rows ></>
+                  </>
+                  <wow64 >0</>
+                  <if ></>
+               </>
+               <_ id = dlgundel >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgufin >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <feedback ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run >
+                  <desc ></>
+                  <path >inst</>
+                  <name ></>
+                  <cmdline ></>
+                  <work >default</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >norm</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = shell >
+                  <desc ></>
+                  <path >inst</>
+                  <name ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = unprocess >
+                  <desc ></>
+               </>
+               <_ tag = 0 id = dlgundel >
+                  <desc ></>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <headlogo ></>
+                  <if ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc ></>
+                  <root >curuser</>
+                  <subkey ></>
+                  <reglist >
+                     <rows ></>
+                  </>
+                  <wow64 >0</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = regget >
+                  <desc ></>
+                  <root >curuser</>
+                  <subkey ></>
+                  <reglist >
+                     <rows ></>
+                  </>
+                  <wow64 >0</>
+               </>
+            </>
+            <unicon >uninstall</>
+            <unresfile ></>
+            <leftimg >uninstall - 1</>
+            <caption ></>
+            <noadmin >0</>
+         </>
+      </>
+   </>
+   <phone ></>
+   <shfolder ></>
+   <headcol ></>
+   <headtext ></>
+   <headimg ></>
+   <stretchback >0</>
+   <silentpar >-silent</>
+   <custfont ></>
+   <upinclude >0</>
+   <uppath >inst</>
+   <upexe >update.exe</>
+   <upurl ></>
+   <upxml >update.ini</>
+   <upredir ></>
+   <csfile ></>
+   <csinst >"<exefilename>"</>
+   <csuninst >"<exefilename>"</>
+   <csupdate >"<exefilename>"</>
+   <crautorun >0</>
+   <autoicon ></>
+   <multilist >
+      <rows ></>
+   </>
+   <updateroot sorttype = 0 >
+      <children >
+         <update id = update expanded = 2 >
+            <children >
+               <_ tag = 0 id = varset >
+                  <desc ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >silent</>
+                           <value >0</>
+                           <if ></>
+                           <subst ></>
+                        </>
+                        <_ >
+                           <varname >param</>
+                           <value >#updatexml#</>
+                           <if ></>
+                           <subst ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = varset >
+                        <desc ></>
+                        <varlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <value >1</>
+                                 <if ></>
+                                 <subst ></>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc ></>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname ></>
+                           <iftype >ifcommand</>
+                           <not >0</>
+                           <value >-s</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = download >
+                  <desc ></>
+                  <url ></>
+                  <filelist >
+                     <rows >
+                        <_ >
+                           <urlfile >#updatexml#</>
+                           <path >temp</>
+                           <custpath ></>
+                           <file >update.ini</>
+                           <if ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = iniget >
+                  <desc ></>
+                  <path >temp</>
+                  <ifile >update.ini</>
+                  <section >main</>
+                  <inilist >
+                     <rows >
+                        <_ >
+                           <key >version</>
+                           <varname >newver</>
+                           <defval >0</>
+                        </>
+                        <_ >
+                           <key >url</>
+                           <varname >url</>
+                           <defval ></>
+                        </>
+                     </>
+                  </>
+                  <utf >0</>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = if expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = exit >
+                              <desc ></>
+                              <extype >exit</>
+                              <code >1</>
+                              <msg ></>
+                           </>
+                        </>
+                        <desc ></>
+                        <else ></>
+                        <condlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <iftype >notempty</>
+                                 <not >0</>
+                                 <value ></>
+                                 <orand >and</>
+                              </>
+                           </>
+                        </>
+                     </>
+                     <_ tag = 0 id = if expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = exit >
+                              <desc ></>
+                              <extype >exit</>
+                              <code >1</>
+                              <msg >#luperrdown#</>
+                           </>
+                        </>
+                        <desc ></>
+                        <else ></>
+                        <condlist >
+                           <rows >
+                              <_ >
+                                 <varname >silent</>
+                                 <iftype >empty</>
+                                 <not >0</>
+                                 <value ></>
+                                 <orand >and</>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc ></>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >newver</>
+                           <iftype >empty</>
+                           <not >0</>
+                           <value ></>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = shell >
+                              <desc ></>
+                              <path >custom</>
+                              <name >#url#</>
+                              <if ></>
+                              <runasadmin >0</>
+                           </>
+                        </>
+                        <desc ></>
+                        <type >quest</>
+                        <caption >#lupcaption#</>
+                        <text >#lupnewer#</>
+                        <btns >yesno</>
+                        <resvar >msgret</>
+                        <msgif >yes</>
+                        <if ></>
+                     </>
+                  </>
+                  <desc ></>
+                  <else >lowerver</>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >newver</>
+                           <iftype >greaterver</>
+                           <not >0</>
+                           <value >#ver#</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = function expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 2 >
+                        <children >
+                           <_ tag = 0 id = empty ></>
+                        </>
+                        <desc ></>
+                        <type >info</>
+                        <caption >#lupcaption#</>
+                        <text >#lupok#</>
+                        <btns >def</>
+                        <resvar >msgret</>
+                        <msgif >def</>
+                        <if >!silent</>
+                     </>
+                  </>
+                  <desc ></>
+                  <name >lowerver</>
+               </>
+            </>
+            <upicon >update</>
+            <resfile ></>
+            <leftimg >update - 1</>
+            <caption ></>
+            <noadmin >1</>
+         </>
+      </>
+   </>
+   <ignnotfound >0</>
+   <tozip >0</>
+   <zipfile ></>
+</>
