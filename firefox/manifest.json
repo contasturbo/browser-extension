@@ -1,13 +1,13 @@
 {
 	"name": "Contas Turbo",
-	"version": "2.0",
+	"version": "2.1",
 	"manifest_version": 2,
 	"description": "Gere Links Premium com apenas 1 clique com o Plugin Contas Turbo!",
 	"id": "{85A30CB9-8C7A-4A52-AB7E-161901D95C25}",
 	"applications": {
 		"gecko": {
 			"id": "{85A30CB9-8C7A-4A52-AB7E-161901D95C25}",
-			"strict_min_version": "45.*"
+			"strict_min_version": "48.0"
 		}
 	},
 	"icons": {
@@ -24,12 +24,6 @@
 	"background": {
 		"page": "background.html"
 	},
-	"content_scripts": [
-	{
-		"matches": ["http://*/*"],
-		"js": ["showHeader.js"]
-	}
-	],
 	"permissions": [
 		"tabs",
 		"webRequest",
