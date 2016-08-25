@@ -63,56 +63,13 @@ function jsonToDOM(xml, doc, nodes) {
     }
     return tag.apply(null, xml);
 }
-
-function ContasTurbo_checkUrl(href) {
 	
-	/* List of urls in witch the iframe will be inserted automatically */
-	
-	return ((href.indexOf('ul.to/') != -1 ||
-	href.indexOf('uploaded.net/file/') != -1 ||
-	href.indexOf('datafile.com/d/') != -1 ||
-	(href.indexOf('crocko.com/') != -1 && href.indexOf('.html') == -1 && href.length > 25) ||
-	(href.indexOf('uploadrocket.net/') != -1 && href.indexOf('?op=') == -1 && href.length > 35) ||
-	href.indexOf('ryushare.com/') != -1 ||
-	href.indexOf('uploadable.ch/file/') != -1 ||
-	(href.indexOf('2shared.com/') != -1 && href.indexOf('.html') != -1) ||
-	(href.indexOf('rockfile.eu/') != -1 && href.indexOf('?op=') == -1 && href.length > 30) ||
-	(href.indexOf('uptobox.com/') != -1 && href.indexOf('?op=') == -1 && href.length > 25) ||
-	(href.indexOf('1fichier.com') != -1 && href.length > 24) ||
-	href.indexOf('filepost.com/files/') != -1 ||
-	href.indexOf('jumbofiles.com/') != -1 ||
-	href.indexOf('file4go.net/r/') != -1 ||
-	((href.indexOf('4shared.com/') != -1 || href.indexOf('4shared.com/get')) != -1 && href.length > 25) ||
-	href.indexOf('freakshare.com/files/') != -1 ||
-	href.indexOf('bitshare.com/files/') != -1 || href.indexOf('bitshare.com/?f=') != -1 ||
-	href.indexOf('mediafire.com/?') != -1 || href.indexOf('mediafire.com/download') != -1 ||
-	href.indexOf('depfile.com/') != -1 ||
-	(href.indexOf('netload.in/') != -1 && href.length > 30) ||
-	href.indexOf('sendspace.com/file/') != -1 ||
-	href.indexOf('megashares.com/') != -1 ||
-	href.indexOf('gigasize.com/get/') != -1));
-	
-}
-
-function ContasTurbo_checkRedirect(href) {
-	
-	/* List of urls in witch the iframe will NOT inserted */
-	
-	return ((href.indexOf('contasturbo.com/') != -1 ||
-			href.indexOf('conexaomega.com/') != -1 ||
-			href.indexOf('conexaomega.com/') != -1 ||
-			href.indexOf('brupload.net/') != -1 ||
-			href.indexOf('filefactory.com/file') != -1 ||
-			href.indexOf('filefactory.com/stream') != -1));
-	
-}
-	
-if (window.location.href.indexOf('http://') == 0 && !ContasTurbo_checkRedirect(window.location.href) && ContasTurbo_checkUrl(window.location.href) && document.getElementById('contasturbo_plugin') == null) {
+if (document.getElementById('contasturbo_plugin') == null) {
 	
 	var ContasTurbo_iframe = 
 	['div', {style:'width:100%; height:70px;', id:'contasturbo_plugin'}, 
 		['iframe', {
-			src:'http://api.contasturbo.com/plugin/header.php?v=2',
+			src:'https://www.contasturbo.com/api/plugin/header.php?v=2',
 			scrolling:'no',
 			frameBorder:'0',
 			style:'position: absulute; z-index: 99999; width: 100%; min-width: 950px; border: 0px;'}
@@ -122,7 +79,7 @@ if (window.location.href.indexOf('http://') == 0 && !ContasTurbo_checkRedirect(w
 	var ContasTurbo_iframe_close = 
 	['div', {style:'position: relative; top: 23px; left: 8px; padding: 0px 25px 0 3px; height: 0px; z-index: 999999;', id:'contasturbo_close'}, 
 		['a',{id:'contasturbo_close_a', href:'#'},
-			['img', {src: 'http://api.contasturbo.com/plugin/img/ico_close'}]
+			['img', {src: 'https://www.contasturbo.com/api/plugin/img/ico_close.png'}]
 		]
 	];
 	
