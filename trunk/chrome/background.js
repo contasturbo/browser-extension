@@ -73,7 +73,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 		
 	} else {
 		
-		chrome.tabs.update(tab.id, {url: 'https://www.contasturbo.com/api/plugin/&link=' + tab.url});
+		chrome.tabs.update(tab.id, {url: 'http://www.contasturbo.com/api/plugin/?link=' + tab.url});
 		
 	}
 	
