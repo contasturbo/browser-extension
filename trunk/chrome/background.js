@@ -45,6 +45,7 @@ function ContasTurbo_checkRedirect(href) {
 	return ((href.indexOf('contasturbo.com/') != -1 ||
 			href.indexOf('conexaomega.com/') != -1 ||
 			href.indexOf('retrolink.com.br/') != -1 ||
+			href.indexOf('mega.nz/') != -1 ||
 			href.indexOf('brupload.net/') != -1 ||
 			href.indexOf('filefactory.com/file') != -1 ||
 			href.indexOf('filefactory.com/stream') != -1));
