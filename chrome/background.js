@@ -18,15 +18,14 @@ function ContasTurbo_checkUrl(href) {
 	href.indexOf('ul.to/') != -1 ||
 	href.indexOf('uploaded.to/file/') != -1 ||
 	href.indexOf('uploaded.net/file/') != -1 ||
+	href.indexOf('brfiles.com/f/') != -1 ||
 	href.indexOf('datafile.com/d/') != -1 ||
 	(href.indexOf('crocko.com/') != -1 && href.indexOf('.html') == -1 && href.length > 25) ||
 	(href.indexOf('uploadrocket.net/') != -1 && href.indexOf('?op=') == -1 && href.length > 35) ||
 	(href.indexOf('2shared.com/') != -1 && href.indexOf('.html') != -1) ||
-	(href.indexOf('rockfile.eu/') != -1 && href.indexOf('?op=') == -1 && href.length > 30) ||
 	(href.indexOf('uptobox.com/') != -1 && href.indexOf('?op=') == -1 && href.length > 25) ||
 	(href.indexOf('1fichier.com') != -1 && href.length > 24) ||
 	(href.indexOf('minhateca.com.br') != -1 && href.length > 25) ||
-	(href.indexOf('bigfile.to/file/') != -1 && href.length > 40) ||
 	href.indexOf('filepost.com/files/') != -1 ||
 	href.indexOf('jumbofiles.com/') != -1 ||
 	href.indexOf('file4go.net/r/') != -1 ||
