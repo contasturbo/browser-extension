@@ -1,0 +1,5 @@
+Bug:
+
+Ao entrar em uma página de download (http://uploaded.net/file/izocvhon) e fechar a aba antes que ela termine de carregar, o plugin abre na aba anterior.
+
+Enquanto uma aba do uploaded carrega, se der play no youtube em outra aba o plugin abre la.
