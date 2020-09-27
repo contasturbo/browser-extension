@@ -8,7 +8,7 @@ if (document.getElementById('contasturbo_plugin') == null) {
 			</a>\
 		</div>\
 		<div id="contasturbo_plugin" style="width:100%; height:70px;">\
-			<iframe style="position: absulute; z-index: 99999; width: 100%; min-width: 950px;" scrolling="no" src="https://www.contasturbo.com/api/plugin/header.php" frameBorder="0"></iframe>\
+			<iframe style="position: absulute; z-index: 99999; width: 100%; min-width: 950px;" scrolling="no" referrerpolicy="no-referrer-when-downgrade" src="https://www.contasturbo.com/api/plugin/header.php" frameBorder="0"></iframe>\
 		</div>\
 	' + document.body.innerHTML;
 

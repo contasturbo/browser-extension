@@ -69,7 +69,8 @@ if (document.getElementById('contasturbo_plugin') == null) {
 	var ContasTurbo_iframe = 
 	['div', {style:'width:100%; height:70px;', id:'contasturbo_plugin'}, 
 		['iframe', {
-			src:'https://www.contasturbo.com/api/plugin/header.php',
+            src:'https://www.contasturbo.com/api/plugin/header.php',
+            referrerpolicy:'no-referrer-when-downgrade',
 			scrolling:'no',
 			frameBorder:'0',
 			style:'position: absulute; z-index: 99999; width: 100%; min-width: 950px; border: 0px;'}
