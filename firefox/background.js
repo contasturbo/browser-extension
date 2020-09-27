@@ -18,23 +18,20 @@ function ContasTurbo_checkUrl(href) {
 	href.indexOf('ul.to/') != -1 ||
 	href.indexOf('uploaded.to/file/') != -1 ||
 	href.indexOf('uploaded.net/file/') != -1 ||
-	href.indexOf('datafile.com/d/') != -1 ||
-	(href.indexOf('crocko.com/') != -1 && href.indexOf('.html') == -1 && href.length > 25) ||
-	(href.indexOf('uploadrocket.net/') != -1 && href.indexOf('?op=') == -1 && href.length > 35) ||
+	href.indexOf('brfiles.com/f/') != -1 ||
+	href.indexOf('alfafile.net/file/') != -1 ||
+	href.indexOf('filesmonster.com/download.php?id=') != -1 ||
+	href.indexOf('pandafiles.com') != -1 ||
+	href.indexOf('rapidgator.net/file/') != -1 ||
+	href.indexOf('depositfiles.org/files/') != -1 ||
 	(href.indexOf('2shared.com/') != -1 && href.indexOf('.html') != -1) ||
-	(href.indexOf('rockfile.eu/') != -1 && href.indexOf('?op=') == -1 && href.length > 30) ||
 	(href.indexOf('uptobox.com/') != -1 && href.indexOf('?op=') == -1 && href.length > 25) ||
 	(href.indexOf('1fichier.com') != -1 && href.length > 24) ||
-	(href.indexOf('minhateca.com.br') != -1 && href.length > 25) ||
-	(href.indexOf('bigfile.to/file/') != -1 && href.length > 40) ||
-	href.indexOf('filepost.com/files/') != -1 ||
 	href.indexOf('jumbofiles.com/') != -1 ||
 	href.indexOf('file4go.net/r/') != -1 ||
 	((href.indexOf('4shared.com/') != -1 || href.indexOf('4shared.com/get')) != -1 && href.length > 25) ||
 	href.indexOf('mediafire.com/?') != -1 || href.indexOf('mediafire.com/download') != -1 ||
-	href.indexOf('depfile.com/') != -1 ||
-	href.indexOf('sendspace.com/file/') != -1 ||
-	href.indexOf('megashares.com/') != -1));
+	href.indexOf('sendspace.com/file/') != -1));
 	
 }
 
@@ -47,6 +44,7 @@ function ContasTurbo_checkRedirect(href) {
 			href.indexOf('retrolink.com.br/') != -1 ||
 			href.indexOf('mega.nz/') != -1 ||
 			href.indexOf('brupload.net/') != -1 ||
+			href.indexOf('userscloud.com') != -1 ||
 			href.indexOf('filefactory.com/file') != -1 ||
 			href.indexOf('filefactory.com/stream') != -1));
 	
