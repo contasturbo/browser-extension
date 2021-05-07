@@ -7,19 +7,21 @@ function loadPage(arrayOfTabs) {
 
 window.addEventListener('load', function(){
 
-  try {     
+  try {
 
-    if (chrome) {
-
-      chrome.tabs.query({active: true, currentWindow: true},
-        (arrayOfTabs) => { loadPage(arrayOfTabs) }
-      )
+    if (typeof browser !== 'undefined') {
+      
+      browser.tabs.query({currentWindow: true, active: true}, function (tabs) {
+        loadPage(tabs)
+      });
 
       return
-
+      
     }
 
-    browser.tabs.query({currentWindow: true, active: true}).then(loadPage)
+    chrome.tabs.query({active: true, currentWindow: true},
+      (arrayOfTabs) => { loadPage(arrayOfTabs) }
+    )
 
   } catch(o) {}
 
