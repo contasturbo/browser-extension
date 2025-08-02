@@ -2,13 +2,12 @@
 	"name": "Contas Turbo",
 	"author": "Enrico Dias",
 	"version": "3.1.0",
-	"manifest_version": 2,
-	"default_locale": "pt-BR",
+	"manifest_version": 3,
 	"description": "Gere Links Premium com apenas 1 clique com a extensão do Contas Turbo!",
 	"icons": {
 		"200": "images/icon200.png"
 	},
-	"browser_action": {
+	"action": {
 		"default_icon": {
 			"40": "images/icon200.png"
 		},
